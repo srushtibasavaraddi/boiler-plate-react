@@ -1,5 +1,5 @@
 .header{
-    background-color: $dark-blue;
+    background-color: white; 
 }
 
 .header__title{
@@ -15,4 +15,19 @@
     align-items: center;
     justify-content: space-between;
     display: flex   ;
+}
+
+.logo{
+    padding: $s-size;
+    resize: both;
+    height: 15rem;
+    width: 50rem;
+}
+
+.topBar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: none;
+    padding: 0;
 }

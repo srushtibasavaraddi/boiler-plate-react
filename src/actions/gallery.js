@@ -20,6 +20,8 @@ export const startAddImage=(submissionData={})=>{
                 img.url=url;
                 database.ref("/gallery").push(img).then((ref)=>{
                     dispatch(addImage({
+                        id:ref.key,
+                        imgName,
                         ...img
                     }));
                 })
@@ -29,6 +31,25 @@ export const startAddImage=(submissionData={})=>{
     }
 }
 
+
+export const removeImg= (id)=>(
+    {
+        type:"REM_IMG",
+        id
+    }
+);
+
+export const startRemoveImg = ({id,imgName})=>{
+    return (dispatch,getState)=>{
+            database.ref(`gallery/${id}`).remove().then(()=>{
+                storage.ref().child(`gallery/${imgName}`).delete().then(()=>{
+                }).catch((e)=>{
+                    console.log("er",e);
+                })
+                dispatch(removeImg(id));
+            })
+    }
+}
 
 export const setGallery = (gallery)=>({
     type:"SET_GALLERY",
@@ -45,7 +66,6 @@ export const startSetGallery=()=>{
                     ...item.val()
                 });
             });
-            console.log(gallery);
             dispatch(setGallery(gallery));  
         });
     }

@@ -3,7 +3,6 @@ import {NavLink,Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {logOut} from '../actions/auth';
 
-
  const AdminHeader = (props)=>{
     return (
         <header>
@@ -14,13 +13,11 @@ import {logOut} from '../actions/auth';
             <div>
                 <NavLink to="/admin" activeClassName="is-active" exact={true}>Admission Forms</NavLink>
                 <NavLink to="/imageUpload" activeClassName="is-active">Image Upload</NavLink>
+                <NavLink to="/newsUpload" activeClassName="is-active">News Upload</NavLink>
             </div>
             
         </header>
     )
  }
  
-
-
-
 export default connect () (AdminHeader);

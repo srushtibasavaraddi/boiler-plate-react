@@ -1,6 +1,7 @@
 import React from 'react';
 import {startAddImage} from '../actions/gallery';
 import {connect} from 'react-redux';
+import ImageComponent from '../components/editImageComponent';
 
 class ImageUpload extends React.Component {
     constructor(props) {
@@ -40,13 +41,21 @@ class ImageUpload extends React.Component {
     
     render() {
         return (
+            <div>
             <form onSubmit={this.onSubmit}>
                 <input type="file" onChange={this.onChange}/>
                 <p>Address:<textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Image Description"/></p>
                 <button>Upload</button>
             </form>
+            {this.props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}
+            </div>
         )
     }
 }
 
-export default connect()(ImageUpload); 
+
+const mapStateToProps = (state)=>({
+    gallery:state.gallery
+});
+
+export default connect(mapStateToProps)(ImageUpload); 

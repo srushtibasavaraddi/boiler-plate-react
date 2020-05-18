@@ -9,6 +9,8 @@ import {Provider} from 'react-redux';
 import database,{firebase}  from './firebase/firebase';
 import Loader from './components/loader';
 import {startSetGallery} from './actions/gallery';
+import {startSetNews} from './actions/news';
+import  {startSetAnnouncement} from './actions/annoucement';
 
 //parent can change prop passed causing the child to get rendered  
 
@@ -23,7 +25,11 @@ const jsx=(
 ReactDOM.render(<Loader/>,appRoot);
 store.dispatch(startSetSubmissions()).then(()=>{
     store.dispatch(startSetGallery()).then(()=>{
-        ReactDOM.render(jsx,appRoot);
+        store.dispatch(startSetNews()).then(()=>{
+            store.dispatch(startSetAnnouncement()).then(()=>{
+                ReactDOM.render(jsx,appRoot);
+            })
+        })
     })
      
 });

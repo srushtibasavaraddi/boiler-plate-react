@@ -1,14 +1,57 @@
 import React from 'react';
+import {logIn} from '../actions/auth';
 import {connect} from 'react-redux';
-import {startLogin} from '../actions/auth';
 
-const Login = (props)=>(
-    <div className="box-layout">
-        <div className="box-layout__box">
-            <h1 className="box-layout__title">Boiler Plate</h1>
-            <button className="button" onClick={()=>props.dispatch(startLogin())}>Login with Google</button>
-        </div>
-    </div>
-);
+class Login extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state={
+            error:'',
+            userName:'',
+            password:'',
+        }
+    }
+    
+    onUserNameChange=(e)=>{
+        const userName=e.target.value;
+        this.setState(()=>({
+            userName
+        }))
+    }
 
-export default connect()(Login);
+    onPasswordChange=(e)=>{
+        const password=e.target.value;
+        this.setState(()=>({
+            password
+        }))
+    }
+
+    onSubmit=(e)=>{
+        e.preventDefault(); 
+        if(this.state.userName==='admin' && this.state.password==='admin'){
+            this.props.dispatch(logIn());
+            this.props.history.push('/admin');
+        }
+        else{
+            this.setState(()=>({
+                error:'Incorrect userId or Password'
+            }))
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <form onSubmit={this.onSubmit}>
+                    <p>{this.state.error}</p>
+                    <p>Username<input type="text" onChange={this.onUserNameChange} placeholder="First Name"/></p>
+                    <p>password<input type="password" onChange={this.onPasswordChange} placeholder="Last Name"/></p>
+
+                    <button>Submit</button>
+                </form>
+            </div>
+        )
+    }
+}
+
+export default connect() (Login);

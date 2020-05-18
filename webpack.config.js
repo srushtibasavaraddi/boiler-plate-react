@@ -9,7 +9,6 @@ if(process.env.NODE_ENV==='test'){
 
 }else if(process.env.NODE_ENV==='development'){
     const a=require('dotenv').config({path:'./.env.development'});
-    console.log("sss",a);
 }
 
 module.exports =(env) => {

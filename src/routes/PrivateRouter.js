@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Route,Redirect} from 'react-router-dom';
-import Header from '../components/header';
-
+import AdminHeader from '../components/adminHeader';
 
 export const PrivateRoute = ({
     isAuth,
@@ -12,7 +11,7 @@ export const PrivateRoute = ({
     <Route {...rest} component={(props)=>(
         isAuth?(
             <div>
-                <Header/>
+                <AdminHeader/>
                 <Component {...props}/>
             </div>
         ):(
@@ -22,6 +21,7 @@ export const PrivateRoute = ({
 );
 
 const mapStateToProps=(state)=>({
-    isAuth:!!state.auth.uid 
+    isAuth:state.auth.isAuth 
 })
+
 export default connect (mapStateToProps) (PrivateRoute);

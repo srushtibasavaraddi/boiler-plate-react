@@ -6,10 +6,15 @@ const ImageComponent = (props)=>(
     <div>
         <img src={props.url}/>
         <p>{props.description}</p>
-        <button onClick={()=>{
+        {props.isAuth?<button onClick={()=>{
             props.dispatch(startRemoveImg({id:props.id,imgName:props.imgName}))
-        }}>delete</button>
+        }}>delete</button>:(<div/>)}
+        
     </div>
 );
 
-export default connect()(ImageComponent) ;
+const mapStateToProps=(state)=>({
+    isAuth:state.auth.isAuth 
+})
+
+export default connect(mapStateToProps)(ImageComponent) ;

@@ -6,10 +6,15 @@ const NewsComponent = (props)=>(
     <div>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <button onClick={()=>{
+        {props.isAuth?<button onClick={()=>{
             props.dispatch(startRemoveNews(props.id))
-        }}>delete</button>
+        }}>delete</button>:(<div></div>)}
+        
     </div>
 );
 
-export default connect()(NewsComponent) ;
+const mapStateToProps=(state)=>({
+    isAuth:state.auth.isAuth 
+})
+
+export default connect(mapStateToProps)(NewsComponent) ;

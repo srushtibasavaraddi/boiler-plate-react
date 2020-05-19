@@ -17,6 +17,7 @@ import {connect} from 'react-redux';
                 <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink>
                 <NavLink to="/registration" activeClassName="is-active">Resgistration</NavLink>
                 <NavLink to="/gallery" activeClassName="is-active">Gallery</NavLink>
+                <NavLink to="/downloads" activeClassName="is-active">Downloads</NavLink>
             </div>    
               
         </header>

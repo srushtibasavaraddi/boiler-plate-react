@@ -1,5 +1,6 @@
 const filterReducerDefaultState={
-    sortBy:'date'
+    sortBy:'date',
+    grade:0
 };
 
 export default (state=filterReducerDefaultState,action)=>{
@@ -13,6 +14,11 @@ export default (state=filterReducerDefaultState,action)=>{
             return {
                 ...state,
                 sortBy:'date'
+            }
+        case 'SORT_GRADE':
+            return {
+                ...state,
+                grade:action.grade
             }
         default:
             return state

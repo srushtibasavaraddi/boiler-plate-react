@@ -8,7 +8,6 @@ export const addAnnouncement= (announcement) => ({
 export const startAddAnnoucement=(submissionData)=>{
     return (dispatch,getState) =>{
         database.ref("announcement").set(submissionData).then((ref)=>{
-            console.log(submissionData);
             dispatch(addAnnouncement(submissionData));
         })        
     }

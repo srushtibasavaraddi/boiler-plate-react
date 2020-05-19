@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import NewsComponent from '../components/newsComponent';
+import NewsComponent from '../components/editNewsComponent';
 
 const News = (props)=>(
     <div>

@@ -14,6 +14,7 @@ import {logOut} from '../actions/auth';
                 <NavLink to="/admin" activeClassName="is-active" exact={true}>Admission Forms</NavLink>
                 <NavLink to="/imageUpload" activeClassName="is-active">Image Upload</NavLink>
                 <NavLink to="/newsUpload" activeClassName="is-active">News Upload</NavLink>
+                <NavLink to="/downloadsUpload" activeClassName="is-active">Upload PDF</NavLink>
             </div>
             
         </header>

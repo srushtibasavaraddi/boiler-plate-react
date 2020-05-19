@@ -38,7 +38,6 @@ class ImageUpload extends React.Component {
         alert("Image has been added to gallery")
     }
 
-    
     render() {
         return (
             <div>

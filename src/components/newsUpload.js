@@ -42,7 +42,6 @@ class NewsUpload extends React.Component {
 
     onAnnouncement=(e)=>{
         e.preventDefault(); 
-        console.log(this.state.announcement)
         this.props.dispatch(startAddAnnoucement(this.state.announcement));
         alert("Annoucement added!");
     }

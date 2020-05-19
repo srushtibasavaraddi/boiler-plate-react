@@ -6,6 +6,7 @@ import authReducer from '../reducers/auth';
 import galleryReducer from '../reducers/gallery';
 import newsReducer from '../reducers/news';
 import annoucementReducer from '../reducers/annoucement';
+import downloadsReducer from '../reducers/downloads';
 
 const composeEnhancers =window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -17,7 +18,8 @@ export default ()=>{
             auth:authReducer,
             gallery:galleryReducer,
             news:newsReducer,
-            annoucement:annoucementReducer
+            annoucement:annoucementReducer,
+            downloads:downloadsReducer
         }),
         composeEnhancers(applyMiddleware(thunk))
         // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

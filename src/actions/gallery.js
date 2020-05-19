@@ -18,6 +18,7 @@ export const startAddImage=(submissionData={})=>{
         storage.ref(`gallery/${imgName}`).put(submissionData.url).then(()=>{
             storage.ref().child(`gallery/${imgName}`).getDownloadURL().then((url)=>{
                 img.url=url;
+                img.imgName=imgName;
                 database.ref("/gallery").push(img).then((ref)=>{
                     dispatch(addImage({
                         id:ref.key,

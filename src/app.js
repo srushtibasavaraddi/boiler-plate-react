@@ -11,6 +11,7 @@ import Loader from './components/loader';
 import {startSetGallery} from './actions/gallery';
 import {startSetNews} from './actions/news';
 import  {startSetAnnouncement} from './actions/annoucement';
+import {startSetDownloads} from './actions/dowloads';
 
 //parent can change prop passed causing the child to get rendered  
 
@@ -27,7 +28,9 @@ store.dispatch(startSetSubmissions()).then(()=>{
     store.dispatch(startSetGallery()).then(()=>{
         store.dispatch(startSetNews()).then(()=>{
             store.dispatch(startSetAnnouncement()).then(()=>{
-                ReactDOM.render(jsx,appRoot);
+                store.dispatch(startSetDownloads()).then(()=>{
+                    ReactDOM.render(jsx,appRoot);
+                })
             })
         })
     })

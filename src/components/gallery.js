@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ImageComponent from '../components/imageComponent';
+import ImageComponent from '../components/editImageComponent';
 // import selector from '../selectors/select';
 // import {sortByDate,sortByGrade} from '../actions/filter';
 

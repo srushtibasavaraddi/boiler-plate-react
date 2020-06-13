@@ -9,8 +9,9 @@ const News = (props)=>(
         <div class="box1">
 
             <img src="/images/pic6.jpg" class="image"/>
-            
+
             <div class="text">
+                <h1 class="quote">"Education is our passport to the future. For tomorrow belongs to the people who prepare it today."</h1> <br/>
                 <p>A school is a medium of learning for children and is often regarded as a place of worship for the students. Writing an essay on my school is quite common among students. Here we have essays on My School of different lengths which would prove quite helpful to your children. You can choose the essay as per your length requirement and you shall find that essays have been written in quite easy to understand yet crisp language.</p>
             </div>
            

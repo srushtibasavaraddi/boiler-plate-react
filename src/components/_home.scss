@@ -1,0 +1,10 @@
+$small-font:28px;
+$medium-font:30px;
+$large-font:45px;
+$font-stack:'Muli', serif;
+
+
+.main-container {
+    font-family: $font-stack;
+    font-size: $medium-font;
+}

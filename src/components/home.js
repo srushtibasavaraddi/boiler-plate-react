@@ -2,8 +2,7 @@ import React from 'react';
 import News from '../components/news';
 
 const Home = ()=>(
-    <div>
-        Home Page
+    <div class="main-container">
         <News/>
     </div>
 );

@@ -1,24 +1,51 @@
-.main-header-container {
+.nav-container {
+    background-color:#008080 ;
+    display: flex;
+    padding: 15px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+    width: 100%;
+    font-size: 15px;
+}
+.navbar-nav > li{
+    padding-left:5px;
+    padding-right:15px;
+  }
 
+nav .navbar-nav li a{
+    color: whitesmoke !important;
+    font-family: 'Muli';
+}
+
+nav .navbar-nav li a:hover {
+    background-color:#006060;
+    color: #42526C;	
+    padding: 10px;
+    border-radius:16px;
+}
+
+
+.main-header-container {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
-    background-color:#fefefe;
-    box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
-    display: block;
-
-    .header-text {
-        font-family: 'Muli';
-        font-size: 50px;
-        color: steelblue;
-        font-weight: bold;
-    }
+    background-color:#E0EEEE;
+    
 
     .logo {
-        float: right;
-        height: 100px;
+        height: 200px;
+        width: 50%;
+    }
+
+    .address-text {
+        font-size: 20px;
+        text-align: right;
+        color: #262262;
+        font-family: 'Times New Roman';
+    }
 
     }
-}
+
+    
+
 

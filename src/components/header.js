@@ -22,10 +22,6 @@ import {connect} from 'react-redux';
                     </ul>
                 </div> 
             </nav> 
-
-            <h4>{props.announcement}</h4>
-            
-                
             
         </header>
     )

@@ -5,7 +5,7 @@ import ImageComponent from '../components/editImageComponent';
 // import {sortByDate,sortByGrade} from '../actions/filter';
 
 const Gallery = (props)=>(
-    <div>
+    <div class="gallery container">
         {props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}
     </div>
 );

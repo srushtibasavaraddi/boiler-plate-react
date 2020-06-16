@@ -1,8 +1,9 @@
 import React from 'react';
 import {NavLink,Link} from 'react-router-dom'; 
+import {connect} from 'react-redux';
 
 
-const Footer = ()=>{
+const Footer = (props)=>{
 
     return (
 
@@ -50,4 +51,9 @@ const Footer = ()=>{
   
 )}
 
-export default Footer;
+const mapStateToProps = (state)=>({
+    announcement:state.annoucement
+});
+
+ 
+export default connect (mapStateToProps) (Footer);

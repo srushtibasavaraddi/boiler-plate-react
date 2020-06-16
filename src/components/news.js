@@ -21,10 +21,16 @@ const News = (props)=>(
             <div class="title">
                 <h1 >Latest News</h1>
             </div>
-            {props.news.map((item) => 
-                <div class="news"> 
+
+            <div class="news">
+
+                {props.news.map((item) => <p> 
                     <NewsComponent key={item.id} {...item}/>
-                </div> )}
+                </p> )}
+        
+            </div>
+
+                
         </div>
 
     </div>

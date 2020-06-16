@@ -19,7 +19,7 @@ import {connect} from 'react-redux';
                         <li class="nav-item"><a class="nav-link"><NavLink to="/downloads" activeClassName="is-active">Downloads</NavLink></a></li>
                     </ul>
                     <ul class="navbar-nav navbar-right">
-                        <li class="nav-item"><Link to="/login"><button class="btn btn-primary">Login</button></Link> </li>
+                        <li class="nav-item"><Link to="/login"><button class="btn btn-warning btn-lg">Login</button></Link> </li>
                     </ul>
                 </div> 
             </nav> 

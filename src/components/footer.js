@@ -12,7 +12,7 @@ const Footer = ()=>{
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-8 col-sm-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="footer-pad">
                                 <h4>More</h4>
                                 <ul class="list-unstyled">
@@ -24,7 +24,7 @@ const Footer = ()=>{
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-6 col-sm-6">
                             <div class="footer-pad">
                                 <h4>Follow Us</h4>
                                 <ul class="social-network social-circle">

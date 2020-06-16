@@ -12,8 +12,9 @@ import {connect} from 'react-redux';
             <nav class="navbar navbar-expand-md">
                 <div class="nav-container">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link"  data-toggle="collapse" data-target=".navbar-collapse.show"><NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink></a></li>
-                        <li class="nav-item"><a class="nav-link"><NavLink to="/registration" activeClassName="is-active">Resgistration</NavLink></a></li>
+
+                        <li class="nav-item active"><a class="nav-link"><NavLink to="/" activeClassName="is-active" exact={true}>Dashboard</NavLink></a></li>
+                        <li class="nav-item"><a class="nav-link"><NavLink to="/registration" activeClassName="is-active">Registration</NavLink></a></li>
                         <li class="nav-item"><a class="nav-link"><NavLink to="/gallery" activeClassName="is-active">Gallery</NavLink></a></li>
                         <li class="nav-item"><a class="nav-link"><NavLink to="/downloads" activeClassName="is-active">Downloads</NavLink></a></li>
                     </ul>

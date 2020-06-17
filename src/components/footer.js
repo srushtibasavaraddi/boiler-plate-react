@@ -10,43 +10,50 @@ const Footer = (props)=>{
         <footer class="mainfooter" role="contentinfo">
             
             <div class="footer-middle">
+
                 <div class="container">
+
                     <div class="row">
 
-                        <div class="col-md-6 col-sm-6">
-                            <div class="footer-pad">
-                                <h4>More</h4>
-                                <ul class="list-unstyled">
-                                    <li><a><NavLink to="/registration" activeClassName="is-active">Register</NavLink></a></li>
-                                    <li><a><NavLink to="/login" activeClassName="is-active">Login</NavLink></a></li>
-                                    <li><a><NavLink to="/gallery" activeClassName="is-active">Gallery</NavLink></a></li>
-                                    <li><a><NavLink to="/downloads" activeClassName="is-active">Downloads</NavLink></a></li>
-                                </ul>
-                            </div>
+                        <div class="col-md-6 col-sm-4 copy">
+
+                                <div class="footer-pad">
+                                    <p>Established in 1991</p> 
+                                    <p>Registration number : 315</p> 
+                                    <p>Address : Kelgeri road, Sampige nagar, Dharwad -08.</p>
+                                    <p>Contact : +91-9481123105</p>
+                                </div>
                         </div>
 
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-2 col-sm-4"></div>
+
+                        <div class="col-md-4 col-sm-4 social">
                             <div class="footer-pad">
-                                <h4>Follow Us</h4>
+                                <p class="info">Follow Us</p>
                                 <ul class="social-network social-circle">
                                     <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="#" class="icoGooglemap" title="Googlemap"><i class="fa fa-map-marker"></i></a></li>
                                 </ul>
                             </div>
                         </div>
 
+                        
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-12 copy">
-                            <p class="text-center">&copy; Copyright 2020 - BEMS. All rights reserved.</p>
-                        </div>
-                    </div>
-
 
                 </div>
+
+                <div class="footer-last">
+                    <div>
+                        <p class="text-center">&copy; Copyright 2020 - BEMS. All rights reserved.</p>
+                        <p class="text-center"> Website built and managed by Web<b>V</b>erse</p>
+                    </div>
+                    
+                </div>
         </div>
+
+
+        
 </footer>
   
 )}

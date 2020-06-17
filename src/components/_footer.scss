@@ -6,6 +6,11 @@
   bottom: 0;
   width: 100%;
 
+  .row div{
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
 
   a {
     color: #fff;
@@ -19,9 +24,13 @@
   }
   
   .copy {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
-    border-top: 1px solid #FFFFFF;
+  }
+
+  .info {
+    font-size: 14px;
+    padding: 10px;
   }
   
   .footer-middle {
@@ -32,8 +41,12 @@
   .container {
     background-color: #16222A;
   }
-  
-  
+
+  .footer-pad {
+    margin: 10px;
+    padding: 20px;
+  }
+
   /*SOCİAL İCONS*/
   
   /* footer social icons */
@@ -57,18 +70,18 @@
     background-color: #3B5998;
   }
   
-  .social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
+  .social-network a.icoYoutube:hover {
+    background-color: #FF0000;
   }
 
-  .social-network a.icoInstagram:hover {
-    background-color: #DC427A;
+  .social-network a.icoGooglemap:hover {
+    background-color: #FBC320;
   }
   
   
   .social-network a.icoFacebook:hover i,
-  .social-network a.icoLinkedin:hover i,
-  .social-network a.icoInstagram:hover i {
+  .social-network a.icoYoutube:hover i,
+  .social-network a.icoGooglemap:hover i {
     color: #fff;
   }
   
@@ -125,6 +138,14 @@
   .line {
       color: white;
       width: 3px;
+  }
+
+  .footer-last {
+    background-color: #16222A;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+    margin: 0;
   }
   
 }

@@ -34,14 +34,11 @@ nav .navbar-nav li a:hover {
         margin-bottom: 0;
         padding: 0;
 
-        .address-text {
-            font-size: 15px;
-            text-align: right;
-            color: black;
-            font-family: 'Muli';
-            font-weight: bold;
+
+        .logo {
+            max-width: 100%;
+            height:auto;
         }
-    
       }
 
       @keyframes animateWave {

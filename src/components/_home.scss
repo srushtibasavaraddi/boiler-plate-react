@@ -3,6 +3,14 @@ $medium-font:30px;
 $large-font:45px;
 $font-stack:'Muli', serif;
 
+* {
+    box-sizing: border-box;
+ }
+    body, html {
+    margin: 0 auto;
+    padding: 0;
+ }
+
 
 .main-container {
     font-family: $font-stack;

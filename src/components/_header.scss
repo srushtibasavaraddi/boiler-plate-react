@@ -1,3 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+
+
+
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #42526C;
+}
+
+.navigation-bar {
+
+    left: 0;
+    top: 0;
+    right: 0;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #006060;
+
+}
+
 .nav-container {
     background-color:#008080 ;
     display: flex;
@@ -5,6 +38,7 @@
     margin: 0;
     font-size: 15px;
     width: 100%;
+    
 }
 .navbar-nav > li{
     padding-left:5px;
@@ -26,14 +60,14 @@ nav .navbar-nav li a:hover {
 
     .wave-container {
         position: relative;
-        background: #fff;
-        color: #FFF;
+        background:#fefefe;
         text-align: center;
+        height: auto;
+        margin: 0;
+        padding: 20px;
         overflow: hidden;
-        height: 500px;
-        margin-bottom: 0;
-        padding: 0;
-
+        max-width: 100%;
+       
 
         .logo {
             max-width: 100%;

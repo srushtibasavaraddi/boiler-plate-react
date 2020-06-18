@@ -43,10 +43,8 @@ class Login extends React.Component{
 
     render() {
         return (
-            <div class="main">
-                <div class="bg-image"></div>
-                    <div class="login-container">
-    
+            
+                    
                         <div class="container-fluid">
                             <div  class="row justify-content-center login-form">
                                 <div class="col-sm-6 com-md-4">
@@ -78,11 +76,7 @@ class Login extends React.Component{
                             
                         </div>
         
-                    </div>
-
-                </div>
-
-            </div>
+                    </div>   
         )
     }
 }

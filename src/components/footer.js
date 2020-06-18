@@ -33,7 +33,7 @@ const Footer = (props)=>{
                                 <ul class="social-network social-circle">
                                     <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-                                    <li><a href="#" class="icoGooglemap" title="Googlemap"><i class="fa fa-map-marker"></i></a></li>
+                                    <li><a href="https://goo.gl/maps/zujH1ZVSU6uiGEvPA" class="icoGooglemap" title="Googlemap"><i class="fa fa-map-marker"></i></a></li>
                                 </ul>
                             </div>
                         </div>

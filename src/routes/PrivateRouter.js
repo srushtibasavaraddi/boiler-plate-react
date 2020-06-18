@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Route,Redirect} from 'react-router-dom';
 import AdminHeader from '../components/adminHeader';
+import Footer from '../components/footer';
 
 export const PrivateRoute = ({
     isAuth,
@@ -13,6 +14,7 @@ export const PrivateRoute = ({
             <div>
                 <AdminHeader/>
                 <Component {...props}/>
+                <Footer/>
             </div>
         ):(
             <Redirect to="/"/>

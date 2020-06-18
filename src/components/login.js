@@ -2,6 +2,7 @@ import React from 'react';
 import {logIn} from '../actions/auth';
 import {connect} from 'react-redux';
 import {NavLink,Link} from 'react-router-dom'; 
+import Footer from '../components/footer';
 
 class Login extends React.Component{
     constructor(props) {
@@ -42,34 +43,46 @@ class Login extends React.Component{
 
     render() {
         return (
-            <section class="container-fluid">
-                <section class="row justify-content-center">
-                    <section class="col-12 col-sm-6 com-md-4">
-                        <form class="form-container" onSubmit={this.onSubmit}>
-                            <div class='form-group'>
-                                <h4 class="text-center font-weight-bold">Login</h4>
-                                <label for ="InputUsername">Username</label>
-                                <input type="text" class="form-control" id="InputUsername" aria-describeby="username here"
-                                onChange={this.onUserNameChange} placeholder="Enter username"/>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="InputPassword">Password</label>
-                                <input type="password" class="form-control" id="InputPassword" placeholder="Enter password" onChange={this.onPasswordChange} />
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-
-                            <div class="form-footer">
-                                <p>Don't have an account?<a><NavLink to="/registration" activeClassName="is-active">Sign Up</NavLink></a></p>
-                            </div>
-
-                        </form>
-                    </section>
-                    
-                </section>
+            <div class="main">
+                <div class="bg-image"></div>
+                    <div class="login-container">
     
-            </section>
+                        <div class="container-fluid">
+                            <div  class="row justify-content-center login-form">
+                                <div class="col-sm-6 com-md-4">
+                                    <form class="form-container" onSubmit={this.onSubmit}>
+                                        <div class='form-group'>
+
+                                            <div class="form-header">
+                                                <h4 class="title">Login<i class="fa fa-user"></i></h4>
+                                            </div>
+                                            
+                                            <label for ="InputUsername">Username</label>
+                                            <input type="text" class="form-control" id="InputUsername" aria-describeby="username here"
+                                            onChange={this.onUserNameChange} placeholder="Enter username"/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="InputPassword">Password</label>
+                                            <input type="password" class="form-control" id="InputPassword" placeholder="Enter password" onChange={this.onPasswordChange} />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+                                        <div class="form-footer">
+                                            <p>Don't have an account?<a><NavLink to="/registration" activeClassName="is-active">Sign Up</NavLink></a></p>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
         )
     }
 }

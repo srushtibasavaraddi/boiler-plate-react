@@ -103,7 +103,7 @@ class Registration extends React.Component{
                     <div class="col-sm-6 col-md-4">
                         <form class="form-container" onSubmit={this.onSubmit} >
                             <div class="form-header">
-                                <h4 class="title">Register</h4>
+                                <h4 class="title">Admission Form</h4>
                             </div>
 
                             <div class="form-group">

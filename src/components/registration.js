@@ -117,12 +117,12 @@ class Registration extends React.Component{
                             </div>
 
                             <div class="form-group"> 
-                                <label for="InputLastName">Class</label>
+                                <label for="InputGrade">Class</label>
                                 <Dropdown options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}  value={this.state.grade.toString()} placeholder="Select Grade"/>
                             </div>
 
                             <div class="form-group"> 
-                                <label for="InputLastName">Gender</label>
+                                <label for="InputGender">Gender</label>
                                 <Dropdown options={["Female","Male","Other"]}  onChange={this.onGenderChange}  value={this.state.gender.toString()} placeholder="Select Gender"/>
                             </div>
 

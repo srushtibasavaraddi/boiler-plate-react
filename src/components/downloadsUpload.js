@@ -54,22 +54,61 @@ class DownloadsUpload extends React.Component {
 
     render() {
         return (
-            <div className="jumbotron">
-            <div className="wrapper">
-                <div class="heading">
-                    <h1>Upload resources</h1>
-                </div>
-                <form onSubmit={this.onSubmit}>
-                    <input type="file" onChange={this.onChange}/>
-                    <p>Grade :</p>
+            <div>
+            <div class="container-fluid-2">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wrapper2">
+                                <h1 class="heading">Upload Resources</h1>
+                        </div>
+                        <form class="form-container" onSubmit={this.onSubmit}>
+
+                            <div class="form-group">
+                                <label for="InputFile">Upload File</label>
+                                <input class="form-control" id="InputFile" aria-describeby="file here"  type="file" onChange={this.onChange}/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputGrade">Class</label>
+                                <Dropdown  titleHelper="Grade" options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
+                                value={this.state.grade.toString()} placeholder="Select Grade"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="InputDescription">Description</label>
+                                <textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Description" class="form-control" id="InputDescription" aria-describeby="description here" />
+                            </div>
+        
+                            <button type="submit" class="btn btn-info btn-block">Upload</button>
+
+                        </form>
                     
-                    <Dropdown  titleHelper="Grade" options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
-                    value={this.state.grade.toString()} placeholder="Select Grade"/>
-                    <p>Description:<textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Description"/></p>
-                    <button>Upload</button>
-                </form>
-                {this.props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
-            </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper2">
+                            <h1 class="heading">Posted Resources</h1>
+                </div>
+
+                
+
+                <div class="form-container">
+                            
+                            <div class="row justify-content-center">
+                                <div class="col-sm-7 col-md-6">
+                                    {this.props.downloads.map((item)=> <div class="list">
+                                        <DownloadComponent key={item.id} {...item}/>
+                                    </div>)}   
+                                </div>
+                            </div> 
+    
+                </div>
+                
+                
+                
+                
+                </div>
             </div>
         )
     }

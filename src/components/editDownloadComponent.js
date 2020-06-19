@@ -3,12 +3,12 @@ import {connect} from 'react-redux';
 import {startRemoveDownload} from '../actions/dowloads';
 
 const DownloadComponent = (props)=>(
-    <div>
-        <a href={props.url}>Download</a>
+    <div class="resource-item">
         <p>{props.description}</p>
-        {props.isAuth?<button onClick={()=>{
+        <a href={props.url}>Download</a>&nbsp;
+        {props.isAuth?<button class="btn btn-danger btn-md" onClick={()=>{
             props.dispatch(startRemoveDownload({id:props.id,downloadName:props.downloadName}))
-        }}>delete</button>:(<div/>)}
+        }}>Delete</button>:(<div/>)}
         
     </div>
 );

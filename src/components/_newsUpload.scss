@@ -33,7 +33,7 @@ body{
             font-family:'Roboto', sans-serif;
         }
 
-        .news-list {
+        .list {
             display: flex;
             flex-direction: row;
             padding: 10px;
@@ -43,6 +43,10 @@ body{
             color: whitesmoke;
         
             p{
+                font-size: 15px;
+            }
+
+            a {
                 font-size: 15px;
             }
         }

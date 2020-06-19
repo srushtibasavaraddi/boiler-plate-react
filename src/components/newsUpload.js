@@ -110,7 +110,7 @@ class NewsUpload extends React.Component {
                             
                         <div class="row justify-content-center">
                             <div class="col-sm-7 col-md-6">
-                                        {this.props.news.map((item)=> <div class="news-list">
+                                        {this.props.news.map((item)=> <div class="list">
                                             <NewsComponent key={item.id} {...item}/>
                                         </div>)}
                                   

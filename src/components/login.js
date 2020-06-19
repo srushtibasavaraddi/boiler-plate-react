@@ -31,6 +31,9 @@ class Login extends React.Component{
     onSubmit=(e)=>{
         e.preventDefault(); 
         if(this.state.userName==='admin' && this.state.password==='admin'){
+            this.setState(()=>({
+                error:''
+            }))
             this.props.dispatch(logIn());
             this.props.history.push('/admin');
         }
@@ -69,7 +72,7 @@ class Login extends React.Component{
                                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
 
                                         <div class="form-footer">
-                                            <p>Don't have an account?<a><NavLink to="/registration" activeClassName="is-active">Sign Up</NavLink></a></p>
+                                            <p>{this.state.error}</p>
                                         </div>
 
                                     </form>

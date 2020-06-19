@@ -13,12 +13,13 @@ export const startAddSubmission=(submissionData={})=>{
             address='',
             phoneNo=0,
             fatherName='',
-            mothersName='',
+            motherName='',
             grade=0,
-            createdAt=0
+            createdAt=0,
+            gender='',
         } = submissionData;
 
-        const sub={firstName,lastName,address,phoneNo,fatherName,mothersName,grade,createdAt};
+        const sub={firstName,lastName,address,phoneNo,fatherName,motherName,grade,createdAt,gender};
         database.ref("/submissions").push(sub).then((ref)=>{
             dispatch(addSubmission({
                 id:ref.key,

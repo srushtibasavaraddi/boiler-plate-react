@@ -3,13 +3,12 @@ import {startRemoveNews} from '../actions/news';
 import {connect} from 'react-redux';
 
 const NewsComponent = (props)=>(
-    <div>
+    <div class="news-item">
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        {props.isAuth?<button onClick={()=>{
+        {props.isAuth?<button class="btn btn-danger btn-md" onClick={()=>{
             props.dispatch(startRemoveNews(props.id))
-        }}>delete</button>:(<div></div>)}
-        
+        }}>Delete</button >:(<div></div>)}
     </div>
 );
 

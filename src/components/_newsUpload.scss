@@ -1,0 +1,62 @@
+body{
+    
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container-fluid-2 {
+    position: relative;
+    padding: 70px;
+    margin-bottom:10px;
+    background-image: url("/images/blur-pic4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        margin-bottom: 15px;
+    }
+        
+    .form-container {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+        border-radius: 10px;
+        padding: 50px;
+        position: relative;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+        
+       
+        .form-group{
+            color: whitesmoke;
+            font-size: 15px;
+            font-family:'Roboto', sans-serif;
+        }
+
+        .news-list {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 1px solid rgba(165, 160, 160, 0.808);
+            color: whitesmoke;
+        
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .wrapper2 {
+        color: #f9c32c;
+        border-bottom: 2px solid #fff;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+

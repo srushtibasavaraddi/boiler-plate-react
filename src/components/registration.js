@@ -99,12 +99,12 @@ class Registration extends React.Component{
 
                             <div class="form-group">
                                 <label for="InputFirstName">First Name</label>
-                                <input type="text" class="form-control" id="InputFirstName" aria-describeby="first name here" onChange={this.onFirstNameChange} required />
+                                <input type="text" class="form-control" id="InputFirstName" aria-describeby="first name here" onChange={this.onFirstNameChange} />
                             </div>
 
                             <div class="form-group">
                                 <label for="InputLastName">Last Name</label>
-                                <input type="text" class="form-control" id="InputLastName" aria-describeby="last name here" onChange={this.onLastNameChange} required  />
+                                <input type="text" class="form-control" id="InputLastName" aria-describeby="last name here" onChange={this.onLastNameChange} />
                             </div>
 
                             <div class="form-group"> 
@@ -114,17 +114,17 @@ class Registration extends React.Component{
 
                             <div class="form-group">
                                 <label for="InputFatherName">Father's name</label>
-                                <input type="text" class="form-control" id="InputFatherName" aria-describeby="father's name here" onChange={this.onFatherNameChange} required  />
+                                <input type="text" class="form-control" id="InputFatherName" aria-describeby="father's name here" onChange={this.onFatherNameChange} />
                             </div>
 
                             <div class="form-group">
                                 <label for="InputMotherName">Mother's name</label>
-                                <input type="text" class="form-control" id="InputMotherName" aria-describeby="mother's name here" onChange={this.onMotherNameChange} required  />
+                                <input type="text" class="form-control" id="InputMotherName" aria-describeby="mother's name here" onChange={this.onMotherNameChange} />
                             </div>
 
                             <div class="form-group">
                                 <label for="InputPhoneNumber">Phone number</label>
-                                <input value={this.state.phoneNo} type="text" onChange={this.onPhoneChange} placeholder="+91" class="form-control" id="InputPhoneNumber" aria-describeby="phone number here" required  />
+                                <input value={this.state.phoneNo} type="text" onChange={this.onPhoneChange} class="form-control" id="InputPhoneNumber" aria-describeby="phone number here" />
                             </div>
 
                             <div class="form-group">

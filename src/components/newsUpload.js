@@ -58,19 +58,75 @@ class NewsUpload extends React.Component {
     render() {
         return (
             <div>
-            <form onSubmit={this.onSubmit}>
-                Add news
-                <input type="text" onChange={this.onTitleChange}/>
-                <p>description<textarea type="text" onChange={this.onDescriptionChange} placeholder="Add a crisp news description"/></p>
-                <button>Upload</button>
-            </form>
+                <div class="container-fluid-2">
+                    <div class="row justify-content-center" >
+                        <div class="col-sm-6 col-md-4">
+                            <div class="wrapper2">
+                                <h1 class="heading">Upload News</h1>
+                            </div>
+                            <form class="form-container" onSubmit={this.onSubmit}>
+                                
+                                <div class="form-group">
+                                    <label for="InputNewsTitle">News title</label>
+                                    <input type="text" class="form-control" id="InputNewsTitle" aria-describeby="news title here"  onChange={this.onTitleChange}/>
+                                </div>
 
-            <form onSubmit={this.onAnnouncement}>
-                <p>Announcement<textarea type="text" onChange={this.onAnnouncementChange} placeholder="Add a crisp news announcement"/></p>
-                <button>Upload</button>
-            </form>
-            {this.props.news.map((item)=><NewsComponent key={item.id} {...item}/>)}
+                                <div class="form-group">
+                                    <label for="InputNewsDescription">News Description</label>
+                                    <textarea type="text" onChange={this.onDescriptionChange} placeholder="Add a crisp news description" class="form-control" id="InputNewsDescription" aria-describeby="news description here"/>
+                                </div>
+
+                                <button type="submit" class="btn btn-info btn-block">Upload</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row justify-content-center" >
+
+                        <div class="col-sm-6 col-md-4">
+
+                            <div class="wrapper2">
+                                <h1 class="heading">Upload Announcement</h1>
+                            </div>
+
+                            <form class="form-container" onSubmit={this.onAnnouncement}>
+                                <div class="form-group">
+                                    <label for="InputAnnouncement">Add Announcement</label>
+                                    <textarea type="text" onChange={this.onAnnouncementChange} placeholder="Add a crisp news announcement" class="form-control" id="InputAnnouncement" aria-describeby="announcement here"/>
+                                </div>
+                                <button type="submit" class="btn btn-info btn-block">Upload</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="wrapper2">
+                            <h1 class="heading">Posted Headlines</h1>
+                    </div>
+                    <div class="form-container">
+                            
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7 col-md-6">
+                                        {this.props.news.map((item)=> <div class="news-list">
+                                            <NewsComponent key={item.id} {...item}/>
+                                        </div>)}
+                                  
+                            </div>
+                        </div>
+                    
+
+                    </div>
+                       
+
+            
+
+                </div>
+
             </div>
+           
         )
     }
 }

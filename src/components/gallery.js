@@ -6,26 +6,14 @@ import ImageComponent from '../components/editImageComponent';
 
 const Gallery = (props)=>(
 
-    <div class="gallery container">
-
-        <div class="row">
-
-            <div class="col-md-12">
-
-                <div id="mdb-lightbox-ui"></div>
-
-                    <div class="mdb-lightbox no-margin">
-
+   
                         <figure class="col-md-4">
                             {props.gallery.map((img) => <img class="image"> 
                             <ImageComponent key={img.id} {...img}/>
                             </img>)}
                         </figure> 
                         
-                    </div>
-            </div>
-        </div>
-    </div>
+                  
     
 );
 

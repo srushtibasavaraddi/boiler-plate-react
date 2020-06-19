@@ -9,7 +9,7 @@ const Downloads =(props)=>{
     return (
         <div class="jumbotron">
 
-            <div class="downloads-container">
+            <div class="wrapper">
 
                 <div class="heading">
                     <h1>Study material availabale for download</h1>

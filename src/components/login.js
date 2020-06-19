@@ -47,14 +47,15 @@ class Login extends React.Component{
                     
                         <div class="container-fluid">
                             <div  class="row justify-content-center login-form">
-                                <div class="col-sm-6 com-md-4">
+                                <div class="col-sm-6 col-md-4">
                                     <form class="form-container" onSubmit={this.onSubmit}>
-                                        <div class='form-group'>
 
-                                            <div class="form-header">
-                                                <h4 class="title">Login<i class="fa fa-user"></i></h4>
-                                            </div>
-                                            
+                                        <div class="form-header">
+                                            <h4 class="title">Login<i class="fa fa-user"></i></h4>
+                                        </div>
+
+
+                                        <div class='form-group'>
                                             <label for ="InputUsername">Username</label>
                                             <input type="text" class="form-control" id="InputUsername" aria-describeby="username here"
                                             onChange={this.onUserNameChange} placeholder="Enter username"/>

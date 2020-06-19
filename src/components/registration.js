@@ -89,20 +89,57 @@ class Registration extends React.Component{
 
     render() {
         return (
-            <div>
-                Admission Registration Form!
-                <form onSubmit={this.onSubmit}>
-                    <p>First Name:<input type="text" onChange={this.onFirstNameChange} placeholder="First Name"/></p>
-                    <p>Last Name:<input type="text" onChange={this.onLastNameChange} placeholder="Last Name"/></p>
-                    Class:
-                    <Dropdown options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
-                    value={this.state.grade.toString()} placeholder="Select Grade"/>
-                    <p>Father's Name:<input type="text" onChange={this.onFatherNameChange} placeholder="Father's Name"/></p>
-                    <p>Mother's Name:<input type="text" onChange={this.onMotherNameChange} placeholder="Mother's Name"/></p>
-                    <p>Phone Number:<input value={this.state.phoneNo} type="text" onChange={this.onPhoneChange} placeholder="Phone Number"/></p>
-                    <p>Address:<textarea type="text" onChange={this.onAddressChange} placeholder="Address With Pincode"/></p>
-                    <button>Submit</button>
-                </form>
+            <div class="container-fluid">
+                <div class="row justify-content-center registration-form">
+                    <div class="col-sm-6 col-md-4">
+                        <form class="form-container" onSubmit={this.onSubmit} >
+                            <div class="form-header">
+                                <h4 class="title">Register</h4>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputFirstName">First Name</label>
+                                <input type="text" class="form-control" id="InputFirstName" aria-describeby="first name here" onChange={this.onFirstNameChange} />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputLastName">Last Name</label>
+                                <input type="text" class="form-control" id="InputLastName" aria-describeby="last name here" onChange={this.onLastNameChange} />
+                            </div>
+
+                            <div class="form-group"> 
+                                <label for="InputLastName">Class</label>
+                                <Dropdown options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}  value={this.state.grade.toString()} placeholder="Select Grade"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputFatherName">Father's name</label>
+                                <input type="text" class="form-control" id="InputFatherName" aria-describeby="father's name here" onChange={this.onFatherNameChange} />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputMotherName">Mother's name</label>
+                                <input type="text" class="form-control" id="InputMotherName" aria-describeby="mother's name here" onChange={this.onMotherNameChange} />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputPhoneNumber">Phone number</label>
+                                <input value={this.state.phoneNo} type="text" onChange={this.onPhoneChange} class="form-control" id="InputPhoneNumber" aria-describeby="phone number here" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="InputAddress">Address</label>
+                                <textarea type="text" onChange={this.onAddressChange} placeholder="Address With Pincode" class="form-control" id="InputAddress" aria-describeby="address here"/>
+                            </div>
+
+                            <button type="submit" class="btn btn-success btn-block">Submit</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+               
             </div>
         )
     }

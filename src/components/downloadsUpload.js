@@ -54,19 +54,27 @@ class DownloadsUpload extends React.Component {
 
     render() {
         return (
-            <div>
-            <form onSubmit={this.onSubmit}>
-                <input type="file" onChange={this.onChange}/>
-                <Dropdown options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
-                value={this.state.grade.toString()} placeholder="Select Grade"/>
-                <p>Description:<textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Description"/></p>
-                <button>Upload</button>
-            </form>
-            {this.props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
+            <div className="jumbotron">
+            <div className="wrapper">
+                <div class="heading">
+                    <h1>Upload resources</h1>
+                </div>
+                <form onSubmit={this.onSubmit}>
+                    <input type="file" onChange={this.onChange}/>
+                    <p>Grade :</p>
+                    
+                    <Dropdown  titleHelper="Grade" options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
+                    value={this.state.grade.toString()} placeholder="Select Grade"/>
+                    <p>Description:<textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Description"/></p>
+                    <button>Upload</button>
+                </form>
+                {this.props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
+            </div>
             </div>
         )
     }
 }
+
 
 const mapStateToProps = (state)=>({
     downloads:selector(state.downloads,state.filter.grade),

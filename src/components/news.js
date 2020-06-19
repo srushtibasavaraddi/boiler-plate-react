@@ -20,7 +20,7 @@ const News = (props)=>(
         <div class="news-container">
 
             <div class="title">
-                <h1 >Latest News</h1>
+                <h1 >Announcements</h1>
             </div>
 
             <div>

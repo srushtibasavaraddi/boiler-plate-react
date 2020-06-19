@@ -15,7 +15,8 @@ class Registration extends React.Component{
             phoneNo:0,
             fatherName:'',
             motherName:'',
-            grade:0
+            grade:0,
+            gender:"Female"
         }
     }
     onFirstNameChange=(e)=>{
@@ -60,6 +61,13 @@ class Registration extends React.Component{
         }))
     }
 
+    onGenderChange=(e)=>{
+        const gender=e.value;
+        this.setState(()=>({
+            gender
+        }))
+    }
+
     onPhoneChange=(e)=>{
         const phoneNo=e.target.value;
         if(phoneNo.match(/^\d{0,10}/)){
@@ -78,8 +86,9 @@ class Registration extends React.Component{
             address:this.state.address,
             phoneNo:parseInt(this.state.phoneNo,10),
             fatherName:this.state.fatherName,
-            mothersName:this.state.mothersName,
+            motherName:this.state.motherName,
             grade:this.state.grade,
+            gender:this.state.gender,
             createdAt:moment().valueOf()
         }));
         alert("form submitted successesfully");
@@ -94,7 +103,7 @@ class Registration extends React.Component{
                     <div class="col-sm-6 col-md-4">
                         <form class="form-container" onSubmit={this.onSubmit} >
                             <div class="form-header">
-                                <h4 class="title">Register</h4>
+                                <h4 class="title">Admission Form</h4>
                             </div>
 
                             <div class="form-group">
@@ -110,6 +119,11 @@ class Registration extends React.Component{
                             <div class="form-group"> 
                                 <label for="InputLastName">Class</label>
                                 <Dropdown options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}  value={this.state.grade.toString()} placeholder="Select Grade"/>
+                            </div>
+
+                            <div class="form-group"> 
+                                <label for="InputLastName">Gender</label>
+                                <Dropdown options={["Female","Male","Other"]}  onChange={this.onGenderChange}  value={this.state.gender.toString()} placeholder="Select Gender"/>
                             </div>
 
                             <div class="form-group">

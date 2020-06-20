@@ -16,3 +16,10 @@ const mapStateToProps = (state)=>({
 });
 
 export default connect(mapStateToProps)(Gallery);
+
+// <figure class="col-md-4">
+//                             {props.gallery.map((img) => <img class="image"> 
+//                             <ImageComponent key={img.id} {...img}/>
+//                             </img>)}
+//                         </figure> 
+

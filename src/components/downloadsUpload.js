@@ -65,7 +65,7 @@ class DownloadsUpload extends React.Component {
 
                         <div class="form-group">
                             <label for="exampleInputFile">File input</label>
-                            <input type="file" id="exampleInputFile" class="form-control input-lg"/>
+                            <input type="file" id="exampleInputFile" class="form-control input-lg" onChange={this.onChange}/>
                         </div>
 
                             <div class="form-group">

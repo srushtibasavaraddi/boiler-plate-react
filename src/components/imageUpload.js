@@ -41,11 +41,34 @@ class ImageUpload extends React.Component {
     render() {
         return (
             <div>
-            <form onSubmit={this.onSubmit}>
-                <input type="file" onChange={this.onChange}/>
-                <p>Address:<textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Image Description"/></p>
-                <button>Upload</button>
-            </form>
+                <div class="container-fluid-2">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="wrapper2">
+                                    <h1 class="heading">Upload Images</h1>
+                            </div>
+
+                            <form class="form-container" onSubmit={this.onSubmit}>
+
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Image input</label>
+                                    <input type="file" id="exampleInputFile" class="form-control"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="InputDescription">Description</label>
+                                    <textarea type="text" onChange={this.onDescriptionChange} placeholder="Add Image Description" class="form-control" id="InputDescription" aria-describeby=" image description here" />
+                                </div>
+
+                                <button type="submit" class="btn btn-info btn-block">Upload</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
             {this.props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}
             </div>
         )

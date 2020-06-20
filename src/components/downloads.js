@@ -26,12 +26,17 @@ const Downloads =(props)=>{
                         }
                         }
                         value={props.grade.toString()}/>
-                        {props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
 
                     </div>
 
-                </div>
+                    <div class="resource">
 
+                        {this.props.downloads.map((item) => <DownloadComponent key={item.id} {...item}/>)} 
+
+                    </div>
+                     
+
+                </div>
             
             </div>
             

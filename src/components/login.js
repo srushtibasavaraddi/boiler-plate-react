@@ -59,13 +59,13 @@ class Login extends React.Component{
 
 
                                         <div class='form-group'>
-                                            <label for ="InputUsername">Username</label>
+                                            <label for ="InputUsername">Username</label><span class="required">*</span>
                                             <input type="text" class="form-control" id="InputUsername" aria-describeby="username here"
                                             onChange={this.onUserNameChange} placeholder="Enter username"/>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="InputPassword">Password</label>
+                                            <label for="InputPassword">Password</label><span class="required">*</span>
                                             <input type="password" class="form-control" id="InputPassword" placeholder="Enter password" onChange={this.onPasswordChange} />
                                         </div>
 

@@ -107,22 +107,22 @@ class Registration extends React.Component{
                             </div>
 
                             <div class="form-group">
-                                <label for="InputFirstName">First Name</label>
+                                <label for="InputFirstName">First Name</label><span class="required">*</span>
                                 <input type="text" class="form-control" id="InputFirstName" aria-describeby="first name here" onChange={this.onFirstNameChange} />
                             </div>
 
                             <div class="form-group">
-                                <label for="InputLastName">Last Name</label>
+                                <label for="InputLastName">Last Name</label><span class="required">*</span>
                                 <input type="text" class="form-control" id="InputLastName" aria-describeby="last name here" onChange={this.onLastNameChange} />
                             </div>
 
                             <div class="form-group"> 
-                                <label for="InputGrade">Class</label>
+                                <label for="InputGrade">Class</label><span class="required">*</span>
                                 <Dropdown options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}  value={this.state.grade.toString()} placeholder="Select Grade"/>
                             </div>
 
                             <div class="form-group"> 
-                                <label for="InputGender">Gender</label>
+                                <label for="InputGender">Gender</label><span class="required">*</span>
                                 <Dropdown options={["Female","Male","Other"]}  onChange={this.onGenderChange}  value={this.state.gender.toString()} placeholder="Select Gender"/>
                             </div>
 
@@ -137,7 +137,7 @@ class Registration extends React.Component{
                             </div>
 
                             <div class="form-group">
-                                <label for="InputPhoneNumber">Phone number</label>
+                                <label for="InputPhoneNumber">Phone number</label><span class="required">*</span>
                                 <input value={this.state.phoneNo} type="text" onChange={this.onPhoneChange} class="form-control" id="InputPhoneNumber" aria-describeby="phone number here" />
                             </div>
 

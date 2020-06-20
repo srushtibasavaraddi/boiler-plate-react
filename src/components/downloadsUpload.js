@@ -63,14 +63,14 @@ class DownloadsUpload extends React.Component {
                         </div>
                         <form class="form-container" onSubmit={this.onSubmit}>
 
-                            <div class="form-group">
-                                <label for="InputFile">Upload File</label>
-                                <input class="form-control" id="InputFile" aria-describeby="file here"  type="file" onChange={this.onChange}/>
-                            </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile" class="form-control input-lg"/>
+                        </div>
 
                             <div class="form-group">
                                 <label for="InputGrade">Class</label>
-                                <Dropdown  titleHelper="Grade" options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
+                                <Dropdown  variant="success" id="dropdown-basic" titleHelper="Grade" options={[1,2,3,4,5,6,7,8,9]}  onChange={this.onGradeChange}
                                 value={this.state.grade.toString()} placeholder="Select Grade"/>
                             </div>
                             

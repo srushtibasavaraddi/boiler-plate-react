@@ -4,6 +4,7 @@ body{
     margin: 0;
 }
 
+
 .container-fluid-2 {
     position: relative;
     padding: 70px;
@@ -13,6 +14,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
+
 
     .row {
         margin-bottom: 15px;
@@ -25,12 +29,25 @@ body{
         padding: 50px;
         position: relative;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(139, 202, 238, 0.692);
+        }
         
        
         .form-group{
             color: whitesmoke;
             font-size: 15px;
             font-family:'Roboto', sans-serif;
+
+            #file {
+                padding: 10px;
+                color: #007bff;
+                background-color: #f0f0f0;
+                font-weight: bold;
+            }
+            
         }
 
         .list {
@@ -48,7 +65,10 @@ body{
 
             a {
                 font-size: 15px;
+                margin-right: 10px;
             }
+
+            
         }
     }
 

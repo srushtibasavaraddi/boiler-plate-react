@@ -5,10 +5,14 @@ import ImageComponent from '../components/editImageComponent';
 // import {sortByDate,sortByGrade} from '../actions/filter';
 
 const Gallery = (props)=>(
-
-    <div>
-        {this.props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}
-    </div>
+    
+    <div class="container gallery-container">
+        <div class="tz-gallery">
+            <div class="row">
+                {props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}
+            </div>
+        </div> 
+    </div>                    
 );
 
 const mapStateToProps = (state)=>({
@@ -16,10 +20,3 @@ const mapStateToProps = (state)=>({
 });
 
 export default connect(mapStateToProps)(Gallery);
-
-// <figure class="col-md-4">
-//                             {props.gallery.map((img) => <img class="image"> 
-//                             <ImageComponent key={img.id} {...img}/>
-//                             </img>)}
-//                         </figure> 
-

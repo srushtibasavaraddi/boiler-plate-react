@@ -61,7 +61,11 @@ class ImageUpload extends React.Component {
                             </form>
                         </div>
                     </div>
+
+                    {this.props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}    
                 </div>
+
+
             
             </div>
             

@@ -35,7 +35,7 @@ const ShowSubs = (props)=>(
             <div class="submission">
                 <div class="row mt-3" >
                     {props.submissions.map((stud)=><StudComponent key={stud.id} {...stud}/>)}          
-            </div>
+                </div>
             <div class="spacer5"></div>
             </div>
         

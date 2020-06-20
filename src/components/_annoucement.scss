@@ -1,0 +1,24 @@
+.wrapperAnn{
+    background: rgb(111, 112, 179);
+    text-align: right;
+    padding: none;
+    margin: none;
+    background-image: url("/images/ann.png");
+    background-position: center;
+    background-size: auto;
+}
+
+.marquee {
+    white-space: nowrap;
+    animation: rightThenLeft 24s linear;
+    animation-iteration-count: infinite;
+    padding: none;
+    margin: none;
+    font-size: medium;
+}
+
+@keyframes rightThenLeft {
+    0%   {margin-right:0;}
+    50%  {margin-right:100%;}
+    100% {margin-right:0;}
+}

@@ -35,7 +35,7 @@ class ImageUpload extends React.Component {
             url:this.state.url,
             description:this.state.description
         }))
-        alert("Image has been added to gallery")
+        alert("Image has been added to gallery");
     }
 
     render() {
@@ -69,7 +69,7 @@ class ImageUpload extends React.Component {
                     </div>
 
                 </div>
-            {this.props.gallery.map((img)=><ImageComponent key={img.id} {...img}/>)}
+            
             </div>
         )
     }

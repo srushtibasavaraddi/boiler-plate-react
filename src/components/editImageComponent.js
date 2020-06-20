@@ -3,12 +3,13 @@ import {startRemoveImg} from '../actions/gallery';
 import {connect} from 'react-redux';
 
 const ImageComponent = (props)=>(
-    <div>
+    
+    <div class="image-item">
         <img src={props.url}/>
         <p>{props.description}</p>
-        {props.isAuth?<button onClick={()=>{
+        {props.isAuth?<button class="btn btn-danger btn-md" onClick={()=>{
             props.dispatch(startRemoveImg({id:props.id,imgName:props.imgName}))
-        }}>delete</button>:(<div/>)}
+        }}>Delete</button>:(<div/>)}
         
     </div>
 );

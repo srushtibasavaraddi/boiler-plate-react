@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Loader = ()=>(
-    <div className="loader">
+    <div>
         <img className="loader__image" src="/images/loading.gif"/>
     </div>
 );

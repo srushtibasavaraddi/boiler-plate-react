@@ -1,24 +1,17 @@
 
-.container {
-    background-color: whitesmoke;
-    padding: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-left: 5px;
-    margin-right: 5px;
-    position: relative;
-    flex-direction: row;
-    height: 100%;
+.row {
 
-    .box1 {
+    display: flex;
+    
+    .box-1 {
 
         font-size: 12px;
-        width: 55%;
+        width: 100%;
 
         .image {
-            height: 400px;
-            width: 100%
+            max-width: 100%; 
+            display:block; 
+            height: auto;
         }
 
         .text {
@@ -40,12 +33,12 @@
         box-shadow: 1px 2px 4px rgba(0,0,0,0.5);
         float: right;
         border-radius: 16px;
-        width: 40%;
+        width: 100%;
         
     
         .title {
             background-color:whitesmoke;
-            font-family:'Muli';
+            font-family:'Roboto';
             color:#006060;
             padding: 20px;
             border-radius: 18px;

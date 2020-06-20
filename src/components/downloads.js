@@ -7,40 +7,29 @@ import Dropdown from 'react-dropdown';
 
 const Downloads =(props)=>{
     return (
-        <div class="jumbotron">
-
-            <div class="wrapper">
-
-                <div class="heading">
+        <div className="jumbotron">
+            <div className="wrapper">
+                <div className="heading">
                     <h1>Study material availabale for download</h1>
                 </div>
+                
+                <div className="sub-container">
+                    <p className="sub-heading">Select Grade:</p>
 
-                <div class="sub-container">
-
-                    <p class="sub-heading">Select Grade:</p>
-
-                    <div class="dropdown-container">
-
+                    <div className="dropdown-container">
                         <Dropdown titleHelper="Classes" title="Select Grade" options={[1,2,3,4,5,6,7,8,9]} onChange={(e)=>{
                             props.dispatch(sortGrade(e.value));
                         }
                         }
-                        value={props.grade.toString()}/>
-
+                        value={props.grade.toString()} placeholder="Select Grade"/>
                     </div>
 
-                    <div class="resource">
-
-                        {this.props.downloads.map((item) => <DownloadComponent key={item.id} {...item}/>)} 
-
+                    <div className="resource">
+                        {props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
                     </div>
-                     
-
                 </div>
-            
             </div>
-            
-        </div>
+        </div>   
     );
 }
 

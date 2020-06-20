@@ -9,6 +9,7 @@
 }
 
 .marquee {
+    all:revert;
     white-space: nowrap;
     animation: rightThenLeft 24s linear;
     animation-iteration-count: infinite;

@@ -6,9 +6,9 @@ import {connect} from 'react-redux';
 
  const Header = (props)=>{
     return (
-        <header className="wrapperAnn">
-            <div className="marquee">
-                <p>{props.announcement}</p>    
+        <header>
+            <div  className="wrapperAnn" >
+                <p className="marquee">{props.announcement}</p>    
             </div>
             
             <div class="header-container">

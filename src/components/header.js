@@ -7,6 +7,10 @@ import {connect} from 'react-redux';
  const Header = (props)=>{
     return (
         <header>
+            <div  className="wrapperAnn" >
+                <p className="marquee">{props.announcement}</p>    
+            </div>
+            
             <div class="header-container">
                 <div class="wave-container">
                     <img src="/images/logo.png" class="logo"/> 

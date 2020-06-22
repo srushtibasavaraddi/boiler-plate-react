@@ -93,16 +93,15 @@ class DownloadsUpload extends React.Component {
 
                 
 
-                <div class="form-container">
-                            
-                            <div class="row justify-content-center">
-                                <div class="col-sm-7 col-md-6">
-                                    {this.props.downloads.map((item)=> <div class="list">
-                                        <DownloadComponent key={item.id} {...item}/>
-                                    </div>)}   
-                                </div>
-                            </div> 
-    
+                <div class="form-container">        
+                    <div class="row justify-content-center">
+                        <div class="col-sm-7 col-md-6">
+                            {this.props.downloads.map((item)=> <div class="list">
+                                <DownloadComponent key={item.id} {...item}/>
+                            </div>)}   
+                        </div>
+                        <p>{}</p>
+                    </div> 
                 </div>
                 
                 
@@ -117,7 +116,7 @@ class DownloadsUpload extends React.Component {
 
 const mapStateToProps = (state)=>({
     downloads:selector(state.downloads,state.filter.grade),
-    grade:state.filter.grade
+    grade:state.filter.grade,
 });
 
 export default connect(mapStateToProps)(DownloadsUpload); 

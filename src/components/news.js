@@ -24,7 +24,7 @@ const News = (props)=>(
             <div class="col-xs-6 col-sm-6 col-md-4">
                 <div class="news-container">
                     <div class="title">
-                        <h1 >Announcements</h1>
+                        <h2>Announcements</h2>
                     </div>
                     <div>
                         {props.news.map((item) => <div class="news"> 

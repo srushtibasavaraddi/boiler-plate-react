@@ -30,37 +30,23 @@
 
 }
 
-.resource {
-    position: relative;
+.list {
+    display: flex;
     padding: 20px;
-    margin: 0;
+    margin-bottom: 10px;
+    border: 1px solid rgba(165, 160, 160, 0.808);
     
 
-    .resource-item {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-
-        p {
-            font-size: 20px;
-            display: inline;
-            padding: 0;
-            margin: 0;
-           
-        }
-    
-        a {
-    
-            font-size: 15px;
-            color: rgb(16, 92, 233);
-            font-weight: bold;
-            padding: 0;
-            margin: 0;
-            text-align: right;
-            
-        }
-
+    p{
+        font-size: 25px;
+        color: black;
+        font-family: 'Roboto';
     }
-   
-}
 
+    a {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    
+}

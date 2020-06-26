@@ -27,17 +27,21 @@ const Downloads =(props)=>{
                 </div>
 
                     <div class="jumbotron">
-                        <div class="resource">
-                            
-                                    {props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
-                            
-
+                              
+                            <div class="row">
+                                <div class="col-sm-7 col-md-6">
+                                    {props.downloads.map((item)=> <div class="list">
+                                        <DownloadComponent key={item.id} {...item}/>
+                                    </div>)}   
+                                </div>
+                                
+                            </div> 
                         </div>
                     </div>
 
                 
             </div>
-        </div>   
+          
     );
 }
 

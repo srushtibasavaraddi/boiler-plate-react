@@ -100,7 +100,7 @@ class DownloadsUpload extends React.Component {
                                 <DownloadComponent key={item.id} {...item}/>
                             </div>)}   
                         </div>
-                        <p>{}</p>
+                       
                     </div> 
                 </div>
                 

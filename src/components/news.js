@@ -11,10 +11,9 @@ const News = (props)=>(
                 <div class="box-1">
                     <img src="/images/pic6.jpg" class="image"/>
                     <div class="text">
-                        <blockquote class="blockquote-reverse">
-                            <p>Education is our passport to the future. For tomorrow belongs to the people who prepare it today.</p>
-                            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
+                        <p class="quote">
+                            <h3>" Education is our passport to the future. For tomorrow belongs to the people who prepare it today. "</h3>  
+                        </p>
                         <p>A school is a medium of learning for children and is often regarded as a place of worship for the students. Writing an essay on my school is quite common among students. Here we have essays on My School of different lengths which would prove quite helpful to your children. You can choose the essay as per your length requirement and you shall find that essays have been written in quite easy to understand yet crisp language.</p>
                     </div>
                 </div>

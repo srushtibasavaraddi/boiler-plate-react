@@ -24,10 +24,18 @@ const Downloads =(props)=>{
                         value={props.grade.toString()} placeholder="Select Grade"/>
                     </div>
 
-                    <div className="resource">
-                        {props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
-                    </div>
                 </div>
+
+                    <div class="jumbotron">
+                        <div class="resource">
+                            
+                                    {props.downloads.map((item)=><DownloadComponent key={item.id} {...item}/>)}
+                            
+
+                        </div>
+                    </div>
+
+                
             </div>
         </div>   
     );

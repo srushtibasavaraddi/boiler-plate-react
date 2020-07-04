@@ -15,7 +15,7 @@ const Footer = (props)=>{
 
                     <div class="row">
 
-                        <div class="col-md-6 col-sm-4 copy">
+                        <div class="col-md-6 mx-auto copy">
 
                                 <div class="footer-pad">
                                     <p>Established in 1991</p> 
@@ -25,9 +25,9 @@ const Footer = (props)=>{
                                 </div>
                         </div>
 
-                        <div class="col-md-2 col-sm-4"></div>
+                        <div class="col-md-2 mx-auto"></div>
 
-                        <div class="col-md-4 col-sm-4 social">
+                        <div class="col-md-4 mx-auto social">
                             <div class="footer-pad">
                                 <p class="info">Follow Us</p>
                                 <ul class="social-network social-circle">

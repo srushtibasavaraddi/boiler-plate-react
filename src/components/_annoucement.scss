@@ -1,8 +1,8 @@
 .wrapperAnn{
 
-    background: #42526C;
+    background: #2f4261;
     text-align: right;
-    padding: 5px;
+    padding: 4px;
     margin: none;
     background-position: center;
     background-size: auto;
@@ -16,8 +16,20 @@
     animation-iteration-count: infinite;
     padding: none;
     margin: none;
-    font-size: medium;
+    font-size: 2vw;
 }
+
+@media screen and (min-width: 601px) {
+    .marquee {
+      font-size: medium;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .marquee {
+      font-size: small;
+    }
+  }
 
 @keyframes rightThenLeft {
     0%   {margin-right:0;}

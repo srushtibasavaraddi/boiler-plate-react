@@ -1,17 +1,18 @@
 .wrapperAnn{
-    background: rgb(111, 112, 179);
+
+    background: #42526C;
     text-align: right;
-    padding: none;
+    padding: 5px;
     margin: none;
-    background-image: url("/images/ann.png");
     background-position: center;
     background-size: auto;
+    color: whitesmoke;
 }
 
 .marquee {
     all:revert;
     white-space: nowrap;
-    animation: rightThenLeft 24s linear;
+    animation: rightThenLeft 20s linear;
     animation-iteration-count: infinite;
     padding: none;
     margin: none;

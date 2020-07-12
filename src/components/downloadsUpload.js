@@ -96,7 +96,7 @@ class DownloadsUpload extends React.Component {
                 <div class="form-container">        
                     <div class="row justify-content-center">
                         <div class="col-sm-7 col-md-6">
-                            {this.props.downloads.map((item)=> <div class="list">
+                            {this.props.downloads.map((item)=> <div class="list2">
                                 <DownloadComponent key={item.id} {...item}/>
                             </div>)}   
                         </div>

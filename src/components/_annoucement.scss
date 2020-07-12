@@ -3,9 +3,9 @@
     text-align: right;
     padding: none;
     margin: none;
-    background-image: url("/images/ann.png");
+    background-image: url("/images/ann.jpg");
     background-position: center;
-    background-size: auto;
+    background-size: contain;
 }
 
 .marquee {
@@ -15,7 +15,9 @@
     animation-iteration-count: infinite;
     padding: none;
     margin: none;
+    font-weight: bold;
     font-size: medium;
+    color: black;
 }
 
 @keyframes rightThenLeft {

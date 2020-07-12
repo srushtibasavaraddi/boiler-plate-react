@@ -31,9 +31,9 @@ const Footer = (props)=>{
                             <div class="footer-pad">
                                 <p class="info">Follow Us</p>
                                 <ul class="social-network social-circle">
-                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
-                                    <li><a href="https://goo.gl/maps/zujH1ZVSU6uiGEvPA" class="icoGooglemap" title="Googlemap"><i class="fa fa-map-marker"></i></a></li>
+                                    <li><a href="https://www.facebook.com/basavaraddischool/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCj_hq8dEDEg2icaepB95FqA" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="https://goo.gl/maps/mXZSRZKoWXfTgVNE6" class="icoGooglemap" title="Googlemap"><i class="fa fa-map-marker"></i></a></li>
                                 </ul>
                             </div>
                         </div>

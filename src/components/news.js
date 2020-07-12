@@ -20,7 +20,11 @@ const News = (props)=>(
                         <p class="quote">
                             <h3>" Education is our passport to the future. For tomorrow belongs to the people who prepare it today. "</h3>  
                         </p>
-                        <p>A school is a medium of learning for children and is often regarded as a place of worship for the students. Writing an essay on my school is quite common among students. Here we have essays on My School of different lengths which would prove quite helpful to your children. You can choose the essay as per your length requirement and you shall find that essays have been written in quite easy to understand yet crisp language.</p>
+                            <p> The children of today are gearing up to become adult citizens of tomorrow. 
+                                The growth is parallel to the future of our country, reflected through quality of the
+                                present education system. A school must stimulate curiosity in the young,
+                                impressionable minds and equip them with tools to be better human beings.
+                        </p>
                     </div>
                 
                 </div>

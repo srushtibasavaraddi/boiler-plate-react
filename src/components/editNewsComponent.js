@@ -6,9 +6,11 @@ const NewsComponent = (props)=>(
     <div class="news-item">
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        {props.isAuth?<button class="btn btn-danger btn-md" onClick={()=>{
-            props.dispatch(startRemoveNews(props.id))
-        }}>Delete</button >:(<div></div>)}
+        
+            {props.isAuth?<button class="btn btn-danger btn-md" onClick={()=>{
+                props.dispatch(startRemoveNews(props.id))
+            }}>Delete</button >:(<div></div>)}
+        
     </div>
 );
 

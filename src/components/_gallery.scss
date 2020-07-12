@@ -18,10 +18,7 @@
   }
 
 
-.tz-gallery .lightbox img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
+
 
 .tz-gallery img {
     border-radius: 4px;
@@ -30,6 +27,30 @@
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
+.image-container{
+    position: relative;
+    margin: 10px;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8); 
+    color: #ffdc74; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid whitesmoke;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
 
 
 @media(max-width: 768px) {
@@ -40,5 +61,13 @@
     .container.gallery-container {
         border-radius: 0;
     }
+}
+
+.image-text{
+    font-family: 'Muli';
+    font-size: 15px;
+    color: #2F4261;
+    font-weight: bold;
+    background-color: #e0dddd;
 }
 

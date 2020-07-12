@@ -5,13 +5,16 @@ import {connect} from 'react-redux';
 
 const ImageComponent = (props)=>(
 
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-6 col-md-6">
 
-        <a class="lightbox" href={props.url} data-size="1600x1067">
-            <img id="myImg" alt="picture" src={props.url} class="img-fluid"/>
-        </a>
+        <div class="image-container">
+            <a class="lightbox" href={props.url} data-size="1600x1067">
+                <img id="myImg" alt="picture" src={props.url} class="img-fluid"/>
+            </a>
+            <div class="overlay">{props.description}</div>
+        </div>
         
-        <p>{props.description}</p>
+        
 
         {props.isAuth?<button class="btn btn-danger btn-md" onClick={()=>{
                 props.dispatch(startRemoveImg({id:props.id,imgName:props.imgName}))
